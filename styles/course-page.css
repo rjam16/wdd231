@@ -105,8 +105,9 @@ nav {
     list-style: none;
     color: aliceblue;
     font-size: 1.2rem;
-    background-color: lavender;
+    background-color: #333333;
     max-width: 1200px;
+    align-items: center;
 }
 a {
     display:none;
@@ -115,6 +116,7 @@ a {
     text-decoration: none;
     color: aliceblue;
     font-size: 1.5rem;
+    margin:0 auto
 }
 a:hover {
     text-decoration: overline;
