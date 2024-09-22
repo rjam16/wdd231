@@ -30,6 +30,7 @@ h1 {
     padding: 1 rem;
     align-items: center;
 }
+/*
 .navigation {
     grid-column: 1/4;
     list-style: none;
@@ -61,6 +62,10 @@ a:hover {
 a {
     color:black;
 }
+.open a {
+    display: block;
+    grid-template-rows: 1fr;
+}
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -77,9 +82,51 @@ a {
     content: "✖";
     color: aliceblue;
 }
+*/
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 1rem;
+    right: 2vw;
+}
+#menu::before {
+    content: "☰";
+    color: aliceblue;
+}
+#menu.open::before {
+    content: "✖";
+    color: aliceblue;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: aliceblue;
+    font-size: 1.2rem;
+    background-color: lavender;
+    max-width: 1200px;
+}
+a {
+    display:none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+a:hover {
+    text-decoration: overline;
+    text-size-adjust: 5%;
+}
+
+/* when button is clicked */
 .open a {
     display: block;
-    grid-template-rows: 1fr;
+}
+.active::before {
+    content: "✨";
 }
 main {
     max-width: 1000px;
