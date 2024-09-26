@@ -1,0 +1,18 @@
+{
+    "family_name": "James",
+    "move_in_date": "2023-03-02",
+    "number_of_people": 2,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Rebekah James",
+            "gender": "Female",
+            "birthdate": "2002-01-30"
+        },
+        {
+            "name": "Alexander James",
+            "gender": "Male",
+            "birthdate": "1996-03-18"
+        }
+    ]
+}
