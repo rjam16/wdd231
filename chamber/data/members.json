@@ -1,0 +1,100 @@
+{
+    "members": [
+        {
+            "businessName": "Samsung",
+            "streetAddress": "416, Maetan 3-Dong, Yeongtong-Gu, Suwon",
+            "city": "Gyeonggi-Do",
+            "country": "South Korea",
+            "phone": "+82-2-2255-0114",
+            "url": "https://www.samsung.com/sec/",
+            "logo": "https://www.hatchwise.com/wp-content/uploads/2022/10/image-9.png",
+            "membership": 1
+        },
+        {
+            "businessName": "Hyundai",
+            "streetAddress": "25, Yulgok-ro 2-gil, Jongno-gu",
+            "city": "Seoul",
+            "country": "South Korea",
+            "phone": "+82-2-390-1114",
+            "url": "http://www.hyundaicorp.com/",
+            "logo": "https://www.logo-designer.co/storage/2017/12/2017-new-Hyundai-logo-design.png",
+            "membership": 2
+        },
+        {
+            "businessName": "Kia Motors",
+            "streetAddress": "12, Heolleung-ro, Seocho-gu",
+            "city": "Seoul",
+            "country": "South Korea",
+            "phone": "+82-2-556-3933",
+            "url": "https://www.kia.com/kr",
+            "logo": "https://www.kiamedia.com/image/low/17388/1/2?v=3",
+            "membership": 3
+        },
+        {
+            "businessName": "LG",
+            "streetAddress": "128, Yeoui-daero, Yeongdeungpo-gu",
+            "city": "Seoul",
+            "country": "South Korea",
+            "phone": "+82-2-3777-1114",
+            "url": "https://www.lge.co.kr/",
+            "logo": "https://kreafolk.com/cdn/shop/articles/lg-logo-design-history-and-evolution-kreafolk_03aeb70a-1702-4330-a3d7-91c344688e97.jpg?v=1717725016&width=2048",
+            "membership": 1
+        },
+        {
+            "businessName": "POSCO",
+            "streetAddress": "6261, Donghaean-ro, Nam-gu, Pohang-si",
+            "city": "Gyeongsangbuk-do",
+            "country": "South Korea",
+            "phone": "+82-054-220-0114",
+            "url": "https://www.posco.co.kr/",
+            "logo": "https://industrytechinsights.com/wp-content/uploads/2023/10/POSCO.png",
+            "membership": 2
+        },
+        {
+            "businessName": "Naver",
+            "streetAddress": "95 Jeongjail-ro, Bundang-gu",
+            "city": "Seongnam",
+            "country": "South Korea",
+            "phone": "+82-2-1588-3830",
+            "url": "https://www.naver.com/",
+            "logo": "https://images.crunchbase.com/image/upload/c_pad,f_auto,q_auto:eco,dpr_1/v1504499304/in36bktetqoapibgeabo.png",
+            "membership": 3
+        },
+        {
+            "businessName": "Kakao",
+            "streetAddress": "242, Cheomdan-ro, Jeju-si",
+            "city": "Jeju-do",
+            "country": "South Korea",
+            "phone": "+82 1577-3754",
+            "url": "https://www.kakaocorp.com/",
+            "logo": "https://res.heraldm.com/content/image/2020/11/05/20201105000076_0.jpg",
+            "membership": 2
+        }
+    ],
+    "membership": [
+        {
+            "level": "Gold Membership",
+            "id": "gold",
+            "price": "$500",
+            "benefits": ["All the benefits of the lower tiers plus...", "Advertising spotlight on chamber home page", "4 business mentoring meetings per year"]
+        },
+        {
+            "level": "Silver Membership",
+            "id": "silver",
+            "price": "$300",
+            "benefits": ["All the benefits of the lower tiers plus...", "Use of our \"Resources and Education for Businesses\" Center"]
+        },
+        {
+            "level": "Bronze Membership",
+            "id": "bronze",
+            "price": "$200",
+            "benefits": ["All the benefits of the non-profit membership plus...", "Business marketing workshops", "Invitations to 60+ networking events"]
+        },
+        {
+            "level": "Non-profit Membership",
+            "id": "np",
+            "price": "Free",
+            "benefits": ["Exclusive Chamber Newsletter access", "Increased visability via our public chamber membership directory"]
+        }
+    ]
+}    
