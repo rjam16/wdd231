@@ -9,21 +9,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Rebekah James">
-        <meta name="description" content="WDD 231 South Korean Chamber of Commerce and Industry Directory Page">
+        <meta name="description" content="WDD 231 South Korean Chamber of Commerce and Industry Home Page">
         <meta property="og:url"                content="https://rjam16.github.io/wdd231/chamber/directory.html" />
         <meta property="og:type"               content="website" />
-        <meta property="og:title"              content="WDD 231 - South Korean Chamber of Commerce and Industry Directory - Rebekah James" />
-        <meta property="og:description"        content="WDD 231 South Korean Chamber of Commerce and Industry Directory Page" />
+        <meta property="og:title"              content="WDD 231 - South Korean Chamber of Commerce and Industry Home Page - Rebekah James" />
+        <meta property="og:description"        content="WDD 231 South Korean Chamber of Commerce and Industry Home Page" />
         <meta property="og:image"              content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn0Le1gk1EijNoNOI3AdanvFqPMxkCQQbsqw&s" />
         <meta property="twitter:card"               content="summary" />
-        <meta property="twitter:site"               content="South Korean Chamber of Commerce and Industry Directory" />
+        <meta property="twitter:site"               content="South Korean Chamber of Commerce and Industry Home Page" />
         <meta property="twitter:type"               content="website" />
-        <meta property="twitter:title"              content="WDD 231 - South Korean Chamber of Commerce and Industry Directory - Rebekah James" />
-        <meta property="twitter:description"        content="WDD 231 South Korean Chamber of Commerce and Industry Directory Page" />
+        <meta property="twitter:title"              content="WDD 231 - South Korean Chamber of Commerce and Industry Home Page - Rebekah James" />
+        <meta property="twitter:description"        content="WDD 231 South Korean Chamber of Commerce and Industry Home Page" />
         <meta property="twitter:image"              content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn0Le1gk1EijNoNOI3AdanvFqPMxkCQQbsqw&s" />
         <link rel="stylesheet" href="styles/normalize.css">
-        <title>WDD 231 - Chamber Directory - Rebekah James</title>
-        <script src="scripts/directory.js" defer></script>
+        <title>WDD 231 - Chamber Home Page - Rebekah James</title>
+        <script src="scripts/home.js" defer></script>
     </head>
     <body>
         <header></header>
@@ -31,8 +31,8 @@
             <p>Chamber of Commerce and Industry</p>
             <button id="menu"></button>
             <nav class="navigation">
-                <a href="chamber/index.html">Home</a>
-                <a class="active" href="directory.html">Directory</a>
+                <a class="active" href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
                 <a href="#">Join</a>
                 <a href="#">Discover</a>
             </nav>
@@ -40,15 +40,35 @@
         <main>
             <div class="hero">
                 <picture>
-                    <source media="(max-width:38rem)" srcset="images/city-view-korea-50.jpg 615w" sizes="100vw">
-                    <img src="images/city-view-korea.jpg" alt="Korean city view at night" width="1600" height="500">
+                    <source media="(max-width:38rem)" srcset="images/korean-business-sky-line-50 615w" sizes="100vw">
+                    <img src="images/korean-business-sky-line-50.png" alt="Korean city view at night" width="1600" height="500">
                 </picture>
+                <button>Join South Korean Chamber</button>
             </div>
-            <h2 class="directory">Business Directory</h2>
-            <div class="fares"></div>
-                <button id="view">&#9776;</button>
+            <h2>Home</h2>
+            <div class="info"></div>
+                <section class="events">
+                    <h2>Events</h2>
+                    <ul id="events">
+                        <li>Registration is open for the 2024 Local Businesses in Action Convention. Get tickets today!</li>
+                        <li>Join us on the 21st of October for the 2024 Chamber Foundation Tennis Matches</li>
+                        <li>13th of November Social Media for Businesses Seminar</li>
+                    </ul>
+                </section>
+                <section class="weather">
+                    <h2>Current Weather</h2>
+                    <div class="weatherInfo">
+                        <div class="weatherStats">
+                        </div>
+                    </div>
+                </section>
+                <section class="forecast">
+                    <h2>Weather Forecast</h2>
+                </section>
             </div>
-            <div id="cards"></div>
+            <h3 class="spotlight">Business Spotlights</h3>
+            <div id="spotlight">   
+            </div>
         </main>
         <footer>
             <section class="contact">

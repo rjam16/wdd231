@@ -125,6 +125,76 @@ h2 {
     margin-left: .25em;
     font-size: 1.6em;
 }
+/* events and weather */
+.events, 
+.weather, 
+.forecast {
+    background-color: var(--nav-background-color);
+    min-height: 100px;
+}
+ul {
+    margin-left: 1.5em;
+    list-style-type:square;
+}
+#events li {
+    padding: .6em;
+}
+div.weatherInfo {
+    padding: .5em;
+    text-align: center;
+}
+#temp {
+    font-size: 1.2em;
+}
+.weatherInfo img {
+    margin:auto;
+    background-color: #03055e69;
+    border-radius: 5px;
+}
+div.weatherStats p {
+    padding: .4em;
+}
+#desc {
+    text-transform: capitalize;
+}
+section h2 {
+    background-color: var(--nav-hover-link-color);
+    color: white;
+    font-weight: 100;
+    padding: .25em;
+    font-size: 1.2rem;
+}
+section h3 {
+    text-align: center;
+    background-color: var(--headline-color-on-white);
+    color: black;
+    font-weight: 100;
+    padding: .25em;
+}
+.forecast p {
+    max-width: 100%;
+    padding: .4em;
+    margin-left: .25em;
+}
+/*business spotlight*/
+.spotlight {
+    text-align: center;
+    margin: 1em;
+    color: var(--paragraph-color-on-color);
+    font-weight: 400;
+}
+#spotlight a {
+    margin: .75em auto;
+    text-align: center;
+    display: block;
+}
+#spotlight img {
+    border-radius: 45%;
+}
+#spotlight img:hover {
+    box-shadow: lightgray;
+}
+
 .fares button {
     margin: .5em;
     font-size: 2em;
@@ -237,7 +307,17 @@ p {
         display: inline;
         text-align: right;
     }
-    #cards {
+    section h3 {
+        display: flex;
+        min-height: 3em;
+        align-items: center;
+    }
+    .info {
+        display: grid;
+        grid-template-columns: 2fr 1.2fr 1fr;
+        column-gap: 10px;
+    }
+    #cards, #spotlight {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-gap: 10px;
