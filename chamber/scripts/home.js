@@ -24,8 +24,8 @@ const forecast = document.querySelector(".forecast");
 const lat = "37.56";
 const lon = "126.97";
 const APIkey = "e241bcc26e6a4acc0cb11280f6cb278a";
-const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=37.56&lon=126.97&appid=e241bcc26e6a4acc0cb11280f6cb278a`;
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=37.56&lon=126.97&appid=e241bcc26e6a4acc0cb11280f6cb278a`;
+const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=37.56&lon=126.97&units=metric&appid=e241bcc26e6a4acc0cb11280f6cb278a`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=37.56&lon=126.97&units=metric&appid=e241bcc26e6a4acc0cb11280f6cb278a`;
 
 async function apiFetch(url, displayFunction) {
     try{
