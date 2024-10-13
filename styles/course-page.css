@@ -29,6 +29,8 @@ h1 {
     text-align: center;
     padding: 1 rem;
     align-items: center;
+    animation-duration: 3s;
+    animation-name: slidein;
 }
 /*
 .navigation {
@@ -129,6 +131,20 @@ a:hover {
 }
 .active::before {
     content: "✨";
+}
+@keyframes slidein {
+    from {
+        opacity: 0;
+        translate: -50vw 0;
+    }
+    38% {
+        opacity: 40%;
+        translate: 50vw 0;
+        
+    }
+    to {
+        translate: 0 0;
+    }
 }
 main {
     max-width: 1000px;
@@ -242,6 +258,25 @@ h2 {
 p {
     padding: 30px 15px;
     font-size: 1rem;
+}
+dialog {
+    border: 1px solid rgba(128, 128, 128, 0.493);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1 rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 footer {
     text-align: center;

@@ -14,7 +14,7 @@ hamButton.addEventListener('click', () => {
 
 const joinButton = document.querySelector('.hero button');
 joinButton.addEventListener('click', () => {
-    window.open("#");
+    window.open("join.html");
 })
 //why is it showing as 288??
 //temp pulling from URL is weird

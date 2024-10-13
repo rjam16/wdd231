@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/chamber.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/south-korean-won-coin-solid-icon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Rebekah James">
+        <meta name="description" content="WDD 231 South Korean Chamber of Commerce and Industry Join Page">
+        <meta property="og:url"                content="https://rjam16.github.io/wdd231/chamber/join.html" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="WDD 231 - South Korean Chamber of Commerce and Industry Join Page - Rebekah James" />
+        <meta property="og:description"        content="WDD 231 South Korean Chamber of Commerce and Industry Join Page" />
+        <meta property="og:image"              content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn0Le1gk1EijNoNOI3AdanvFqPMxkCQQbsqw&s" />
+        <meta property="twitter:card"               content="summary" />
+        <meta property="twitter:site"               content="South Korean Chamber of Commerce and Industry Join Page" />
+        <meta property="twitter:type"               content="website" />
+        <meta property="twitter:title"              content="WDD 231 - South Korean Chamber of Commerce and Industry Join Page - Rebekah James" />
+        <meta property="twitter:description"        content="WDD 231 South Korean Chamber of Commerce and Industry Join Page" />
+        <meta property="twitter:image"              content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn0Le1gk1EijNoNOI3AdanvFqPMxkCQQbsqw&s" />
+        <link rel="stylesheet" href="styles/normalize.css">
+        <title>WDD 231 - Chamber Directory - Rebekah James</title>
+        <script src="scripts/join.js" defer></script>
+    </head>
+    <body>
+        <header></header>
+            <h1><img src="images/kcci-logo.png" alt="KCCI logo">South Korea</h1>
+            <p>Chamber of Commerce and Industry</p>
+            <button id="menu"></button>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a class="active" href="join.html">Join</a>
+                <a href="#">Discover</a>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source media="(max-width:38rem)" srcset="images/skyline-korea.jpg 615w" sizes="100vw">
+                    <img src="images/skyline-korea.jpg" alt="Korean city view at night" width="1600" height="500">
+                </picture>
+                <h1>Join us</h1>
+                <form action="thanks.html" method="get">
+                    <fieldset>
+                        <div>
+                            <legend>Personal Information</legend>
+                            <label>First Name: <input type="text" name="first" required autocomplete="given-name"
+                                    title="Your First Name"></label>
+                            <label>Last Name: <input type="text" name="last" required autocomplete="family-name"
+                                    title="Your Last Name"></label>
+                            <label>Title Within Your Organization <input type="text" name="orgTitle"
+                                    autocomplete="organization-title" title="Your Title within Your Organization:"
+                                    pattern="[a-zA-Z\-\s]{7,}"></label>
+                            <label>Email: <input type="email" name="email" required autocomplete="email" title="Your Email"
+                                    placeholder="someone@gmail.com"></label>
+                            <label>Cell Phone Number: <input type="tel" name="phone" required autocomplete="tel"
+                                    title="Your Cell Phone Number"></label>
+                        </div>        
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <legend>Business Information</legend>
+                            <label>Business/Organization Name: <input type="text" name="busName" required
+                                    autocomplete="organization"></label>
+                            <h3 id="animation">Choose Membership Level:</h3>
+                            <div id="memberOptions"></div>
+                            <label class="businessDesc">Business/Organization description: <textarea name="description"
+                                    title="Description of your business or organization" rows="5" cols="35"></textarea></label>
+                            <input type="hidden" name="timestamp" id="timestamp">
+                            <dialog id="dialog">
+                                <div>
+                                    <h3>Title goes here:</h3>
+                                    <button>X</button>
+                                </div>
+                                <p><strong>Benefits include: </strong></p>
+                                <ul></ul>
+                                <p id="price"></p>
+                            </dialog>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Join the Korean Chamber" id="submit">
+                </form>
+        </main>
+        <footer>
+            <section class="contact">
+                <h4>Korean Chamber of Commerce and Industry</h4>
+                <p>39, Sejongdaero, Jung-gu</p>
+                <p>Seoul, Korea</p>
+                <p>international@korcham.net</p>
+                <p>82-2-6050-3543</p>
+            </section>
+            <div id="social">
+                <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook icon" width="48" height="48"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter icon" width="48" height="48"></a>
+                <a href="https://linkedin.com"><img src="images/LinkedIn-icon.png" alt="LinkedIn icon" width="48" height="48"></a>
+            </div>
+            <div class="wdd231">
+                <p>WDD231 Class Project</p>
+                <p>&copy; <span id="currentyear"></span> 🐼 Rebekah James 🐼 Korean Chamber of Commerce and Industry</p>
+                <p>Last Modified <span id="lastModified"></span></p>
+            </div>
+        </footer>
+        <script src="scripts/join.js" type="module"></script>
+    </body>
+    </html>

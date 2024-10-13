@@ -11,6 +11,7 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
 const navAll = document.querySelector("#all");
 const navCSE = document.querySelector("#cse");
 const navWDD = document.querySelector("#wdd");
@@ -127,3 +128,25 @@ generateCourseCards(courses);
 credits.innerHTML = `Total credits required: ${courses.reduce(function (acc, course) {
     return acc + course.credits;
 }, 0)}`;
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal"></button>
+        <h2<${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+courseDiv.addEventListener('click', () => {
+    displayCourseDetails(course);
+});
