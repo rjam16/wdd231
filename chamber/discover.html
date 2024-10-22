@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/chamber.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/south-korean-won-coin-solid-icon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Rebekah James">
+        <meta name="description" content="WDD 231 South Korean Chamber of Commerce and Industry Discover Page">
+        <meta property="og:url"                content="https://rjam16.github.io/wdd231/chamber/discover.html" />
+        <meta property="og:type"               content="website" />
+        <meta property="og:title"              content="WDD 231 - South Korean Chamber of Commerce and Industry Discovery - Rebekah James" />
+        <meta property="og:description"        content="WDD 231 South Korean Chamber of Commerce and Industry Discover Page" />
+        <meta property="og:image"              content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn0Le1gk1EijNoNOI3AdanvFqPMxkCQQbsqw&s" />
+        <meta property="twitter:card"               content="summary" />
+        <meta property="twitter:site"               content="South Korean Chamber of Commerce and Industry Discovery" />
+        <meta property="twitter:type"               content="website" />
+        <meta property="twitter:title"              content="WDD 231 - South Korean Chamber of Commerce and Industry Discovery - Rebekah James" />
+        <meta property="twitter:description"        content="WDD 231 South Korean Chamber of Commerce and Industry Discover Page" />
+        <meta property="twitter:image"              content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn0Le1gk1EijNoNOI3AdanvFqPMxkCQQbsqw&s" />
+        <link rel="stylesheet" href="styles/normalize.css">
+        <title>WDD 231 - Chamber Discovery - Rebekah James</title>
+        <script src="scripts/discover.js" defer></script>
+    </head>
+    <body>
+        <header></header>
+            <h1><img src="images/kcci-logo.png" alt="KCCI logo">South Korea</h1>
+            <p>Chamber of Commerce and Industry</p>
+            <button id="menu"></button>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+                <a class="active" href="discover.html">Discover</a>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source media="(max-width:38rem)" srcset="images/seoul-skyline-cover-50.jpg 615w" sizes="100vw">
+                    <img src="images/seoul-skyline-cover-50.jpg" alt="Korean city view at night" width="1600" height="500">
+                </picture>
+            </div>
+            <h2>Discover</h2>
+            <div id="discover">
+                <div class="sidebar">
+                    <div class="facts">
+                        <h3>Did you know...?</h3>
+                        <p>KCCI is the largest and oldest business organization in Korea.</p>
+                        <p>Educational services are made available to those struggling with employment domestically through government mandates.</p>
+                    </div>
+                    <iframe
+                        src="https://english.korcham.net/nChamEng/Service/Events/appl/01.asp"
+                        width="300" height="300">
+                    </iframe>
+                    <div class="facts">
+                        <h3>Climate</h3>
+                        <p>As a subtropical continental climate, each season of the year is distinct. The winters are bitterly cold and dry. The summers are humid, ending in monsoon season. Springs and autumns are transitional periods that are the most likely to have high precipitation and fog.</p>
+                    </div>
+                    <div class="facts">
+                        <h3>2024 Statistics</h3>
+                        <p><strong>Population: </strong>51,702,206</p>
+                        <p><strong>Employment rate: </strong>69.4%</p>
+                    </div>
+                    <div class="attractions">
+                        <h3>Gyeongbokgung Palace</h3>
+                        <figure>
+                            <img src="images/palace-landmark.jpeg" alt="Gyeongbokgung Palace exterior" width="200" height="152" loading="lazy">
+                            <figcaption>📷: http://www.royalpalace.go.kr/</figcaption>
+                        </figure>
+                        <p>Free guided tours are offered of this 14th century royal palace with its museum & multiple gardens.</p>
+                    </div>
+                    <div class="attractions">
+                        <h3>N Seoul Tower</h3>
+                        <figure>
+                            <img src="images/n-seoul-tower.jpg" alt="N Seoul Tower view from below" width="200" height="152" loading="lazy">
+                            <figcaption>📷: https://www.nseoultower.co.kr/</figcaption>
+                        </figure>
+                        <p>Open to the public since 1980, this tower provides panoramic views of the city below and a rotating restaurant.</p>
+                    </div>
+                    <div class="attractions">
+                        <h3>Bukchon Hanok Village</h3>
+                        <figure>
+                            <img src="images/bukchon-village.jpg" alt="An alley among the houses of Bukchon Hanok Village" width="200" height="152" loading="lazy">
+                            <figcaption>📷: https://bukchon.seoul.go.kr/front/index.do</figcaption>
+                        </figure>
+                        <p>A village from the 14th century fills the narrow streets lined with restored traditional homes.</p>
+                    </div>
+                    <div id="visits">
+                        <p>Welcome!</p>
+                    </div>
+                </div>
+                <div class="images">
+                    <figure>
+                        <img src="images/korea-image-1.jpg" alt="Palace garden in Korea" loading="lazy" width="350" height="525">
+                        <figcaption>Gyeongbukgung Palace Garden, Seoul, South Korea</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/korea-image-2.jpg" alt="spring cherry blossoms next to Gyeongbokgung palace" loading="lazy" width="350" height="200">
+                        <figcaption>Gyeongbokgung Palace, Seoul, South Korea</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/korea-image-3.jpg" alt="Bongeunsa temple view" loading="lazy" width="300" height="430">
+                        <figcaption>Bongeunsa, Gangnam District, Seoul, South Korea</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/korea-image-4.jpg" alt="historical soldier demonstration at Gyeongbokgung palace" loading="lazy" width="350" height="200">
+                        <figcaption>Gyeongbokgung Palace, Seoul, South Korea</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/korea-image-5.jpg" alt="Bukchon Hanok Village Outlook to Rest of the City" loading="lazy" width="350" height="525">
+                        <figcaption>Bukchon Hanok Village, Jongno District, Seoul, South Korea</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/korea-image-7.jpg" alt="Busan Temple view from the Ocean Shore" loading="lazy" width="350" height="200">
+                        <figcaption>Haedong Yonggungsa Temple, Gijang-gun, Busan, South Korea</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/korea-image-6.jpg" alt="Nami Island in spring with cherry blossoms" loading="lazy" width="250" height="320">
+                        <figcaption>Nami Island, Chuncheon-si, Gangwon-do, South Korea</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <section class="contact">
+                <h4>Korean Chamber of Commerce and Industry</h4>
+                <p>39, Sejongdaero, Jung-gu</p>
+                <p>Seoul, Korea</p>
+                <p>international@korcham.net</p>
+                <p>82-2-6050-3543</p>
+            </section>
+            <div id="social">
+                <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook icon" width="48" height="48"></a>
+                <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter icon" width="48" height="48"></a>
+                <a href="https://linkedin.com"><img src="images/LinkedIn-icon.png" alt="LinkedIn icon" width="48" height="48"></a>
+            </div>
+            <div class="wdd231">
+                <p>WDD231 Class Project</p>
+                <p>&copy; <span id="currentyear"></span> 🐼 Rebekah James 🐼 Korean Chamber of Commerce and Industry</p>
+                <p>Last Modified <span id="lastModified"></span></p>
+            </div>
+        </footer>
+    </body>
+    </html>

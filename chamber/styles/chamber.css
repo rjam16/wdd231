@@ -385,6 +385,55 @@ dialog p {
     max-width: 500rem;
     padding: 1rem;
 }
+/* discover page*/
+.facts, .attractions, iframe {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 1.5rem auto;
+    display: block;
+    min-width: 300px;
+}
+iframe {
+    width: 80%;
+}
+.sidebar div {
+    background-color: #caf0f860;
+}
+.facts p, .attractions p {
+    padding: 1rem;
+    color: black
+}
+.facts h3, .attractions h3, #visits p {
+    text-align: center;
+    padding: .7rem;
+}
+#visits p {
+    background-color: white;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: var(--accent2-color);
+    text-shadow: 1px 1px 3px 3px var(--paragraph-background-color);
+    font-weight: 400;
+}
+.images figure, .attractions figure {
+    text-align: center;
+    margin: 1rem 0;
+}
+.images figcaption {
+    padding: .4rem;
+}
+.attractions figcaption {
+    font-size:.8rem;
+}
+.images img {
+    max-width: 85%;
+    height: auto;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(43, 43,43, 0.446);
+}
+.images figcaption {
+    background: rgba(255,255,255, 0.56);
+}
 footer {
     margin-top: 1em;
     background-color: var(--paragraph-background-color);
@@ -442,6 +491,27 @@ p {
         display: flex;
         min-height: 3em;
         align-items: center;
+    }
+    #discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+    .sidebar {
+        margin-top: 1rem;
+        align-self: start;
+    }
+    .facts, .attractions, iframe {
+        margin: 0 auto 3.5rem auto;
+    }
+    .facts p, .attractions p {
+        padding: 1.5rem 2rem;
+    }
+    .images img {
+        max-width: 100%;
+    }
+    .images img:hover {
+        opacity: .5;
     }
     .info {
         display: grid;
