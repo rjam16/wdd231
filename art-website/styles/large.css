@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #231942   ;
+    --secondary-color: #9F86C0 ;
+    --accent1-color: #E0B1CB;
+    --accent2-color: #5E548E;
+    --accent3-color: #BE95C4;
+    --heading-font: "DotGothic16";
+    --paragraph-font: Lato, "Agdasima";
+    --paragraph-bold: "Agdasima", Lato;
+    --headline-color-on-white: #5E548E;
+    --headline-color-on-color: white;
+    --paragraph-color-on-white: #231942;
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #BE95C4;
+    --nav-link-color: #9F86C0;
+    --nav-background-color: #231942;
+    --nav-hover-link-color: #E0B1CB;
+    --nav-hover-background-color: #231942;
+}
+@media screen and (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+    header {
+        flex: 100%;
+        width: 100%;
+        display: flex;
+    }
+    h1 {
+        flex: 1;
+    }
+    nav {
+        flex-direction: row;
+        text-align: right;
+        flex: 1;
+        background-color: var(--nav-background-color);
+        max-width: 100%;
+    }
+    nav a {
+        display: inline;
+        text-align: right;
+    }
+    #image-card-container {
+        width: 50%;
+        margin: 3rem auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    p {
+        font-size: 1.25rem;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        place-items: center;
+    }
+}
